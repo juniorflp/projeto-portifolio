@@ -11,6 +11,9 @@
     --blue2:#0E5173;
     --gray:#ededed;
 }
+body p{
+    font-size: 1.4rem;
+}
 
 body{
     width: 100vw;
@@ -20,12 +23,13 @@ body{
 
 h2, h3{
 color: var(--blue2);
+font-size: 2.5rem;
 }
 header{
     width: 100%;
     height: 10vh;
-    background-color: white;
-    border-bottom: 1px solid #ededed00;  
+    background-color: white; 
+   
     
 }
  .cabeça{
@@ -36,8 +40,10 @@ header{
     align-items: center;     
     flex-wrap: wrap; 
     margin: auto;    
+    
 }
 .cabeça p{
+    font-size: 2rem;
     color: var(--blue2);
     font-weight: 600;
     cursor: pointer;
@@ -48,45 +54,34 @@ header{
 .navlinks{
     display: flex;
     list-style: none;
-    gap: 1.2rem;  
+    gap: 3rem;  
 }
 .navlinks button{
-    font-size: 0.7em;
+    font-size: 1em;
     background-color: white;
-    border: 1px solid var(--blue2);
+    border: 2px solid var(--blue2);
     padding: 2px 8px;
-    border-radius: 2px;
+    border-radius: 3px;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.4s;
-    
-    
+    transition-duration: 0.4s;
+    color: var(--blue2);
 }
 .navlinks button:hover{
     background-color: rgb(13, 196, 13);
-    color: white;
-    
+    color: white;  
 }
 .navlinks .whats{
     padding-left: 2px;
 }
 .cabeça .navlinks a{
     text-decoration: none;
-    font-size: 0.7em;
+    font-size: 1.5em;
     color: var(--blue2);
-    
-    
-
 }
 .cabeça .navlinks a:hover{
     border-bottom: 1px solid var(--blue2);
 }
-.logo{
-   width:100px;
-   color: var(--blue2);
-   cursor: pointer;
-}
-
 
 /*começa o main--------------------------------------*/
 
@@ -98,7 +93,7 @@ main{
     
     width: 100%;
     height: 70vh;
-    position: relative;
+    position:relative ;
 }
 .img-wrapper{
     background-color: rgb(2, 17, 44);
@@ -108,32 +103,34 @@ main{
 .img-wrapper img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
 .txt-pimcipal{
-    position: absolute;
-    top: 38%;
-    right: 6%;
+    position:absolute; 
+    top: 42%;
+    right: 7%;
     color: white;
     text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.637);
-    line-height: 1.5rem;
+    line-height: 2.5rem;
 }
 .txt-pimcipal button{
     margin-top: 10px;
-    width: 7.5rem;
-    margin-left: 18%;
+    width: 12rem;
+    margin-left: 22%;
     background: #00B4DB;  
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  
     background: linear-gradient(to right, #0083B0, #00B4DB); 
-     color: white;
+    color: white;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
     border: 1px solid white;
     border-radius: 4px;
     font-weight: 600;
     transition-duration: 0.2s;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 .txt-pimcipal button:hover{
     background-color: white;
@@ -142,42 +139,45 @@ main{
 }
 .txt-pimcipal p:nth-child(2){
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 .txt-pimcipal p:nth-child(1){
-    font-size: 0.8rem;
+    font-size: 1.8rem;
 }
 .txt-pimcipal p:nth-child(3){
-    font-size: 0.8rem;
+    font-size: 1.6rem;
 }
 /*segunda parte---------------------------------------*/
 
 .sobre-mim{
-    padding-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .segunda-part h2{
     background-color: rgb(255, 255, 255);
-    width: 180px;
+    width: 22rem;
     margin: auto;
     text-align: center;
     border-radius: 5px;
-    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164);   
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164);  
+    font-size: 2.5rem; 
 }
 .artg .eu{
-    width: 11rem;
+    width: 18rem;
     display: flex;
     margin: auto;
-    margin-right: 50px;
+    margin-right: 100px;
     border-radius: 10px;
     box-shadow: -0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.363);
 }
 .artg{
     
-    padding-top: 25px;  
+    padding-top: 100px;  
     width: 80%;
     display: flex;  
     flex-wrap: wrap;
     margin: auto;
+    
 }
 .artg p{
     width: 50%;
@@ -186,33 +186,33 @@ main{
     padding-top: 15px;
     display: flex;
     margin-right: 50px;
-
-    
-       
+    font-size: 1.4rem;   
+      
 }
 
 /*parte 3 portifolio----------------------*/
 .portifa{
-    padding-top: 50px;
+    padding-top: 40px;
     width: 80%;
     margin: auto;
 }
 
 .portifa h3{
     background-color: rgb(255, 255, 255);
-    width: 15rem;
+    width: 35rem;
     margin: auto;
     text-align: center;
     border-radius: 5px;
-    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164);   
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.164); 
+    font-size: 2.5rem;  
 }
 .portifa p{
-    width: 70%;
+    width: 50%;
     margin: auto;
     color: grey;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .main-fotos{
     width: 80%;
@@ -225,31 +225,28 @@ main{
     
 }
 .main-fotos div{
-    flex: 1 1 240px;
+    flex: 1 1 500px;
     margin: 10px;
 }
 .content1 img, .content2 img, .content3 img, .content4 img {
     width: 100%;
     border-radius: 10px;
     box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.219);
-   
-    
 }
 .main-button{
-    
     display: flex;
     gap: 20%;
     flex-wrap: wrap;
 }
 .main-button button{
-    width: 200px;
-    height: 30px;
-    font-size: 1.1em;
-    border-radius: 5px;
+    width: 25rem;
+    height: 5rem;
+    font-size: 2.5em;
+    border-radius: 10px;
     border: 2px solid var(--blue2);
     background-color: white;
     color: var(--blue2);  
-    transition: 0.4s;
+    transition-duration: 0.4s;
     cursor: pointer;
 }
 .main-button button:hover{
@@ -268,13 +265,14 @@ main{
 /*contato baners------------------------------*/
 .main-contato{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 80px;
+    
 
 }
 
 .main-contato h3{
     background-color: rgb(255, 255, 255);
-    width: 8rem;
+    width: 13rem;
     margin: auto;
     text-align: center;
     border-radius: 5px;
@@ -283,27 +281,27 @@ main{
 .main-contato p{
     margin: auto;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 600;
     color: rgba(128, 128, 128, 0.637);
     margin-bottom: 30px;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     
 }
 .container-contato{
-    
+    padding-top: 50px;
     width: 100%;
-    height: 20rem;
+    height: 30rem;
     margin: auto;
     display: flex;
     justify-content: center;
+    
 }
     
 .caixas{
     display: flex;
-    
     width: 88%;
-    height: 15rem;
+    height: 24rem;
     align-items: center;
     justify-content: center;
     justify-content: space-around;
@@ -313,28 +311,28 @@ main{
 .caixa1{
     background-color: white;
     color: var(--blue2);
-    width: 10rem;
-    height: 11rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 10px;
-    font-size: 0.8em;
+    font-size: 2em;
     padding: 10px;
     text-align: center;
     box-shadow: 1px 0px 5px rgb(0 0 0 / 16%);
-    padding-top: 40px;
+    padding-top: 3rem;
 }
 .caixa1 #email, #mundo, #user{
     color: var(--blue2);
-    padding-bottom: 20px;
-    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
 }
    
 .main-serviços{
     width: 100%;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .main-serviços h3{
     background-color: rgb(255, 255, 255);
-    width: 8rem;
+    width: 13rem;
     margin: auto;
     text-align: center;
     border-radius: 5px;
@@ -343,18 +341,18 @@ main{
 .main-serviços p{
     margin: auto;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 600;
     color: rgba(128, 128, 128, 0.637);
     margin-bottom: 30px;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     
 }
 
 .container-serviços{
-    
+    padding-top: 50px;
     width: 100%;
-    height: 20rem;
+    height: 24rem;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -362,7 +360,6 @@ main{
     
 .box{
     display: flex;
-    
     width: 88%;
     height: 15rem;
     align-items: center;
@@ -374,22 +371,23 @@ main{
 .caixa2{
     background-color: white;
     color: var(--blue2);
-    width: 10rem;
-    height: 11rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 10px;
-    font-size: 0.8em;
+    font-size: 2em;
     padding: 10px;
     text-align: center;
     box-shadow: 1px 0px 5px rgb(0 0 0 / 16%);
-    padding-top: 40px;
+    padding-top: 3rem;
+    
 
 
 
 }
 .caixa2 #js, #photo, #illust{
     color: var(--blue2);
-    padding-bottom: 20px;
-    font-size: 1.5rem;
+    padding-bottom:3rem;
+    font-size: 2.5rem;
 }
 footer{
     background-color: white;
@@ -397,18 +395,214 @@ footer{
     text-align: center;
     font-weight: 200;
     letter-spacing: 3px;
-    font-size: small;
+    font-size: 1rem;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.527);
    
 }
 
+@media (max-width:1095px){
+    
+        .cabeça{
+            
+            display: inline;
+        }
+        .cabeça p{
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .navlinks{
+            gap: 1rem;
+            width: 100%;
+        }
+        .navlinks li{
+            text-align: center;
+            font-size: 0.7rem;
+            margin: auto;
+        }
+        .artg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .artg .eu{
+            margin-right: 0px;
+            display: flex;
+            margin: auto;
+        }
+        .artg p{
+            margin-right: 0px;
+            width: 100%;
+        }
+        .portifa p{
+            width: 100%;
+        }
+        .caixa1 #email, #mundo, #user{
+            padding-bottom: 1rem;
+        }
+        .caixa2 #js, #photo, #illust{
+            padding-bottom: 1rem;
+        }
+        .caixa2, .caixa1{
+            padding-bottom: 3rem;
+        }
+        .box, .caixas{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 50px;   
+        }
+        .main-serviços{
+            margin-top: 5rem;
+        }
+        .main-serviços p, .main-contato p{
+            margin-bottom: 5px;
+        }
+        .container-serviços, .container-contato{
+            
+            height: 50rem;
+            align-items: center;   
+        }
+        .container-contato{
+            margin-bottom: 6rem;
+        }
+        .main-button{
+            gap: 2%;}
+
+
+      
+        }     
+    @media (max-width:680px){
+
+        .txt-pimcipal{
+            right: 8%
+            
+            
+        }
+        .txt-pimcipal p:nth-child(2){
+            font-size: 2.3rem;
+    
+        }
+        .txt-pimcipal p:nth-child(1){
+            font-size: 1.5rem;
+        }
+        .txt-pimcipal p:nth-child(3){
+            font-size: 1.1rem;
+        }
+        .txt-pimcipal button{
+            margin-left: 10%;
+            height: 2.9rem;
+        }
+
+
+
+
+        .navlinks{
+            width: 90%;
+            margin: auto;
+        }
+
+        
+        .sobre-mim{
+            padding-bottom: 20px;
+            padding-top: 40px;
+        }
+        .artg{
+            padding-top: 50px;
+        }
+        .portifa h3{
+            width: 70%;
+            font-size: 1.5rem;
+            height: 50px;
+        }
+        .artg .eu{
+            margin-bottom: 30px;
+        }
+        .main-button{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .main-button button{
+            width: 15rem;
+            font-size: 1.5rem;
+        }
+
+    }
+
+        @media (max-width:520px){
+            .img-wrapper{
+                display: none;
+                
+            }
+            .container{
+                background-color: rgb(0, 0, 19);
+            }
+            .imgpeq{
+                width: 100vw;
+                height: 100%;
+                background-color: rgb(0, 2, 5);
+                background-image: url(back8.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.5;
+            }
+
+            .segunda-part h2{
+                font-size: 2rem;
+               width: 250px;
+            }
+            .portifa h3{
+                width: 300px;
+                font-size: 1.4rem;
+                height: 50px;
+            }
+            body p{
+                font-size:1.2rem;
+            }
+            .artg p{
+                font-size: 1.2rem;
+                
+            }
+            .main-serviços h3{
+                font-size: 1.9rem;
+            }
+            .main-serviços p{
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width:425px){
+        
+        .navlinks li{
+            font-size: 0.6rem;
+            padding-top: 10px;
+           
+        }
+    }
+        
+    
+      
+    @media (max-width:379px){
+        .navlinks .whats{
+            font-size: 0.3rem;
+        }
+        
+    
+    
+
+
 /* media quiries --------------------*/
 
-@media (max-width:688px){
+/*@media (max-width:688px){
 
     .cabeça{
         
-        width: 90%;
+        width: 50%;
     }
     
     .txt-pimcipal{
@@ -550,3 +744,4 @@ footer{
     
 
 }
+*/
