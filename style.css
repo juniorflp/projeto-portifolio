@@ -124,7 +124,7 @@ main{
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     padding-top: .4rem;
-    padding-bottom: .4rem;
+    padding-bottom: .3rem;
     border: 1px solid white;
     border-radius: 4px;
     font-weight: 600;
@@ -475,6 +475,7 @@ footer{
         }     
     @media (max-width:680px){
 
+
         .txt-pimcipal{
             right: 8%
             
@@ -491,13 +492,11 @@ footer{
             font-size: 1.1rem;
         }
         .txt-pimcipal button{
-            margin-left: 10%;
-            height: 2.9rem;
+            padding-bottom: 0.3rem;
         }
 
-
-
-
+       
+        
         .navlinks{
             width: 90%;
             margin: auto;
@@ -580,7 +579,8 @@ footer{
         
         .navlinks li{
             font-size: 0.6rem;
-            padding-top: 10px;
+            padding-top: 3px;
+            
            
         }
     }
