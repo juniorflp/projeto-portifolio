@@ -43,6 +43,7 @@ header{
     align-items: center;     
     flex-wrap: wrap; 
     margin: auto;    
+    z-index: 2;
     
 }
 .cabeça p{
@@ -405,6 +406,11 @@ footer{
 }
 
 @media (max-width:1095px){
+    
+        header{
+            height: 80px;
+        }
+        
     
         .cabeça{
             
