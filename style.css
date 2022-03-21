@@ -437,6 +437,7 @@ footer{
         }
         .portifa p{
             width: 100%;
+           text-align: justify;
         }
         .caixa1 #email, #mundo, #user{
             padding-bottom: 1rem;
@@ -494,15 +495,10 @@ footer{
         .txt-pimcipal button{
             padding-bottom: 0.3rem;
         }
-
-       
-        
         .navlinks{
             width: 90%;
             margin: auto;
         }
-
-        
         .sobre-mim{
             padding-bottom: 20px;
             padding-top: 40px;
@@ -527,6 +523,9 @@ footer{
         }
         .main-button button{
             width: 15rem;
+            font-size: 1.5rem;
+        }
+        .main-contato p {
             font-size: 1.5rem;
         }
 
