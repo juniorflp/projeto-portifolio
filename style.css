@@ -29,6 +29,9 @@ header{
     width: 100%;
     height: 10vh;
     background-color: white; 
+    z-index: 1;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.164);
+    margin-bottom: 4px;
    
     
 }
@@ -94,6 +97,7 @@ main{
     width: 100%;
     height: 70vh;
     position:relative ;
+    z-index: 0;
 }
 .img-wrapper{
     background-color: rgb(2, 17, 44);
@@ -579,18 +583,33 @@ footer{
         .navlinks li{
             font-size: 0.6rem;
             padding-top: 3px;
-            
-           
+    
+        }
+        header{
+            height: 80px;
+        }
+        .navlinks .whats{
+            font-size: 0.4rem;
+        }
+        .cabeça p{
+            margin-top: .2rem;
+                
         }
     }
         
     
       
     @media (max-width:379px){
-        .navlinks .whats{
-            font-size: 0.3rem;
+        header{
+            height: 80px;
         }
-        
+        .navlinks .whats{
+            font-size: 0.2rem;
+        }
+        .cabeça p{
+            margin-top: .2rem;
+                
+        }
     
     
 
